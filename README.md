@@ -84,13 +84,11 @@ pip install opencv-python numpy pyserial
     ```bash
     python Python_Server/red_blocks.py
     ```
-    *(See)*
 
 * **For Dark/Black Objects:**
     ```bash
     python Python_Server/dark_mode_blocks.py
     ```
-    *(See)*
 
 ---
 
