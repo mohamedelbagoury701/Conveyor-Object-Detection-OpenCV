@@ -64,7 +64,7 @@ Instead of simple image slicing, the system calculates the **Centroid** of the d
 ```python
 center_x = x + w // 2
 lane_index = int((center_x - active_start_x) // lane_width)
-
+```
 ## 🔧 Installation & Usage
 
 ### 1. Hardware Setup
@@ -78,7 +78,7 @@ lane_index = int((center_x - active_start_x) // lane_width)
 ### 3. Install Python Dependencies
 ```bash
 pip install opencv-python numpy pyserial
-
+```
 ### 4. Run the System
 * **For Red Objects:**
     ```bash
