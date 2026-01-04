@@ -64,3 +64,35 @@ Instead of simple image slicing, the system calculates the **Centroid** of the d
 ```python
 center_x = x + w // 2
 lane_index = int((center_x - active_start_x) // lane_width)
+
+## 🔧 Installation & Usage
+
+### 1. Hardware Setup
+* Connect the Laptop to the ESP32-CAM WiFi: SSID `Fast-Cam-Project`.
+* Connect the Actuator ESP32 to the Laptop via USB.
+
+### 2. Flash Firmware
+* Upload `cam/cam.ino` to the ESP32-CAM.
+* Upload `serialesp/serialesp.ino` to the Actuator ESP32 Node.
+
+### 3. Install Python Dependencies
+```bash
+pip install opencv-python numpy pyserial
+
+### 4. Run the System
+* **For Red Objects:**
+    ```bash
+    python Python_Server/red_blocks.py
+    ```
+    *(See)*
+
+* **For Dark/Black Objects:**
+    ```bash
+    python Python_Server/dark_mode_blocks.py
+    ```
+    *(See)*
+
+---
+
+## 👥 Authors
+* **[Mohamed Elbagoury]** 
